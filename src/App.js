@@ -1,24 +1,32 @@
-import React from 'react';
+import React, { Fragment } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import { Footer, Blog, Possibility, Features, WhatGPT3, Header } from './containers';
-import { CTA, Brand, Navbar } from './components';
+import { Footer, Blog, Possibility, Features, Projects } from './containers'
+import { Navbar } from './components'
 
-import './App.css';
+import './App.css'
 
 const App = () => (
-  <div className="App">
-    <div className="gradient__bg">
-      <Navbar />
-      <Header />
-    </div>
-    <Brand />
-    <WhatGPT3 />
-    <Features />
-    <Possibility />
-    <CTA />
-    <Blog />
-    <Footer />
-  </div>
-);
+	<Router>
+		<div className='App'>
+			<Navbar />
+			<Routes>
+				<Route
+					path='/'
+					element={
+						<Fragment>
+							<Blog />
+							<Possibility />
+							<Features />
+						</Fragment>
+					}
+				/>
 
-export default App;
+				<Route path='/projects' element={<Projects />} />
+			</Routes>
+			<Footer />
+		</div>
+	</Router>
+)
+
+export default App

@@ -1,25 +1,40 @@
-import React from 'react';
-import Article from '../../components/article/Article';
-import { blog01, blog02, blog03, blog04, blog05 } from './imports';
-import './blog.css';
+import React from 'react'
+import './blog.css'
+
+import { project01, project02, project03, project04 } from './imports'
+
+import Carousel from 'react-bootstrap/Carousel'
 
 const Blog = () => (
-  <div className="gpt3__blog section__padding" id="blog">
-    <div className="gpt3__blog-heading">
-      <h1 className="gradient__text">A lot is happening, <br /> We are blogging about it.</h1>
-    </div>
-    <div className="gpt3__blog-container">
-      <div className="gpt3__blog-container_groupA">
-        <Article imgUrl={blog01} date="Sep 26, 2021" text="GPT-3 and Open  AI is the future. Let us exlore how it is?" />
-      </div>
-      <div className="gpt3__blog-container_groupB">
-        <Article imgUrl={blog02} date="Sep 26, 2021" text="GPT-3 and Open  AI is the future. Let us exlore how it is?" />
-        <Article imgUrl={blog03} date="Sep 26, 2021" text="GPT-3 and Open  AI is the future. Let us exlore how it is?" />
-        <Article imgUrl={blog04} date="Sep 26, 2021" text="GPT-3 and Open  AI is the future. Let us exlore how it is?" />
-        <Article imgUrl={blog05} date="Sep 26, 2021" text="GPT-3 and Open  AI is the future. Let us exlore how it is?" />
-      </div>
-    </div>
-  </div>
-);
+	<div>
+		<Carousel fade slide={true}>
+			<Carousel.Item interval={2000}>
+				<img className='d-block w-100' src={project01} alt='First slide' />
+				<Carousel.Caption>
+					<h3>Slava City</h3>
+				</Carousel.Caption>
+			</Carousel.Item>
+			<Carousel.Item interval={2000}>
+				<img className='d-block w-100' src={project02} alt='Second slide' />
 
-export default Blog;
+				<Carousel.Caption>
+					<h3>English Village</h3>
+				</Carousel.Caption>
+			</Carousel.Item>
+			<Carousel.Item interval={2000}>
+				<img className='d-block w-100' src={project03} alt='Third slide' />
+				<Carousel.Caption>
+					<h3>Third slide label</h3>
+				</Carousel.Caption>
+			</Carousel.Item>
+			<Carousel.Item interval={2000}>
+				<img className='d-block w-100' src={project04} alt='Third slide' />
+				<Carousel.Caption>
+					<h3>Third slide label</h3>
+				</Carousel.Caption>
+			</Carousel.Item>
+		</Carousel>
+	</div>
+)
+
+export default Blog

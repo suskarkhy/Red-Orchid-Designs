@@ -1,47 +1,61 @@
-import React from 'react';
-import gpt3Logo from '../../logo.svg';
-import './footer.css';
+import React from 'react'
+import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
+import logo from '../../assets/RO-logo-transBR.png'
+import './footer.css'
 
 const Footer = () => (
-  <div className="gpt3__footer section__padding">
-    <div className="gpt3__footer-heading">
-      <h1 className="gradient__text">Do you want to step in to the future before others</h1>
-    </div>
+	<div className='gradient__bg'>
+		<div className='gpt3__footer section__padding'>
+			<div className='gpt3__footer-heading'>
+				<div className='gpt3__footer-links_logo'>
+					<img alt='Red Orchid Designs' src={logo} />
+				</div>
+				<div className='get-in-touch'>
+					<h1>
+						Get in
+						<a href='https://wa.me/message/OE3JFQ4EXCRVG1' target='_blank' rel='noopener noreferrer' title='click me'>
+							{' '}
+							Touch{' '}
+						</a>
+					</h1>
+					<div className='icons-div'>
+						<div className='icons'>
+							<a href='https://www.facebook.com/red.orchid.20' target='_blank' rel='noopener noreferrer' title='Facebook'>
+								{' '}
+								<AiOutlineFacebook size={27} />{' '}
+							</a>
+							<a href='https://wa.me/message/OE3JFQ4EXCRVG1' target='_blank' rel='noopener noreferrer' title='Instagram'>
+								{' '}
+								<AiOutlineInstagram size={27} />{' '}
+							</a>
+							<a href='tel:07502000201' target='_blank' rel='noopener noreferrer' title='Whatsapp'>
+								{' '}
+								<AiOutlineWhatsApp size={27} />{' '}
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    <div className="gpt3__footer-btn">
-      <p>Request Early Access</p>
-    </div>
+			<div className='gpt3__footer-links'>
+				<div className='gpt3__footer-links_div'>
+					<a href='https://goo.gl/maps/rpCuFUf6ThNJoNqE6' target='_blank' rel='noopener noreferrer' title='location'>
+						<p>Star Towers - Building B - 3rd Floor - apartment 12</p>
+					</a>
+					<a href='tel:07502000201' target='_blank' rel='noopener noreferrer' title='phone number'>
+						<p>+964 750 200 0201</p>
+					</a>
+					<a href='mailto:redorchid1221@gmail.com' rel='noopener noreferrer' title='email'>
+						<p>redorchid1221@gmail.com</p>
+					</a>
+				</div>
+			</div>
 
-    <div className="gpt3__footer-links">
-      <div className="gpt3__footer-links_logo">
-        <img src={gpt3Logo} alt="gpt3_logo" />
-        <p>Crechterwoord K12 182 DK Alknjkcb, <br /> All Rights Reserved</p>
-      </div>
-      <div className="gpt3__footer-links_div">
-        <h4>Links</h4>
-        <p>Overons</p>
-        <p>Social Media</p>
-        <p>Counters</p>
-        <p>Contact</p>
-      </div>
-      <div className="gpt3__footer-links_div">
-        <h4>Company</h4>
-        <p>Terms & Conditions </p>
-        <p>Privacy Policy</p>
-        <p>Contact</p>
-      </div>
-      <div className="gpt3__footer-links_div">
-        <h4>Get in touch</h4>
-        <p>Crechterwoord K12 182 DK Alknjkcb</p>
-        <p>085-132567</p>
-        <p>info@payme.net</p>
-      </div>
-    </div>
+			<div className='gpt3__footer-copyright'>
+				<p>@2022 Red Orchid. All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+)
 
-    <div className="gpt3__footer-copyright">
-      <p>@2021 GPT-3. All rights reserved.</p>
-    </div>
-  </div>
-);
-
-export default Footer;
+export default Footer

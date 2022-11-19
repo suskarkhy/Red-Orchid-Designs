@@ -1,19 +1,33 @@
-import React from 'react';
-import possibilityImage from '../../assets/possibility.png';
-import './possibility.css';
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+import building from '../../assets/building-plane.png'
+
+import { MdOutlineFindInPage } from 'react-icons/md'
+
+import './possibility.css'
 
 const Possibility = () => (
-  <div className="gpt3__possibility section__padding" id="possibility">
-    <div className="gpt3__possibility-image">
-      <img src={possibilityImage} alt="possibility" />
-    </div>
-    <div className="gpt3__possibility-content">
-      <h4>Request Early Access to Get Started</h4>
-      <h1 className="gradient__text">The possibilities are <br /> beyond your imagination</h1>
-      <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
-      <h4>Request Early Access to Get Started</h4>
-    </div>
-  </div>
-);
+	<div className='gpt3__possibility section__padding' id='possibility'>
+		<div className='gpt3__possibility-content'>
+			<h1 className='gradient__text'>About Red Orchid!</h1>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+				the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+				centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+				Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
+				Lorem Ipsum
+			</p>
+			<Link to='/about' className='link-remove'>
+				<h4>
+					More Information About Us <MdOutlineFindInPage />
+				</h4>
+			</Link>
+		</div>
+		<div className='gpt3__possibility-image'>
+			<img src={building} alt='possibility' />
+		</div>
+	</div>
+)
 
-export default Possibility;
+export default Possibility
