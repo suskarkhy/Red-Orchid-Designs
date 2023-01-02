@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import { Footer, Blog, Possibility, Features, Projects } from './containers'
-import { Navbar } from './components'
+import { Navbar, About, Project } from './components'
 
 import './App.css'
 
@@ -23,6 +23,10 @@ const App = () => (
 				/>
 
 				<Route path='/projects' element={<Projects />} />
+
+				<Route path='/projects/:name' element={<Project />} />
+
+				<Route path='/about' element={<About />} />
 			</Routes>
 			<Footer />
 		</div>

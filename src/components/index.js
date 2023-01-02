@@ -1,3 +1,5 @@
 export { default as Article } from './article/Article'
 export { default as Feature } from './feature/Feature'
 export { default as Navbar } from './navbar/Navbar.js'
+export { default as Project } from './project/Project'
+export { default as About } from './about/About'

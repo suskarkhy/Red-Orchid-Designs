@@ -1,36 +1,55 @@
 import React from 'react'
 import './projects.css'
+import { Link } from 'react-router-dom'
 
 import image from '../../assets/test 10 ps 1.jpg'
+import logo from '../../assets/RO-logo-transBR.png'
+import { img1, img2, img3, img4 } from './imports'
+
+import { Container } from 'react-bootstrap'
 
 const projectsData = [
 	{
 		title: 'English Village',
-		image: '../../assets/Renders/007 english village office/007 stair scene 1 RV1 .jpg',
+		image: img1,
 	},
 	{
 		title: 'Slava',
-		image: '../../assets/Renders/001-Slava Villa Dr.zhilia/001 master bedroom rv3scene 2.jpg',
+		image: img2,
 	},
 	{
 		title: 'Apartment',
-		image: '../../assets/Renders/009 dr kamal apartment/bedroom right side/test 2 A.jpg',
+		image: img3,
 	},
 	{
 		title: 'another',
-		image: '../../assets/Renders/modification/barzan pergola rv3/barzan pergola scene 2  rv3.jpg',
+		image: img4,
 	},
 ]
 
 const Projects = () => {
 	return (
-		<div className='projects-container'>
+		<div className='projects'>
 			<div className='image'>
 				<img src={image} alt='projects' />
+				<h1>Projects</h1>
+				<img className='logo' src={logo} alt='logo' />
 			</div>
-			<div className='projects'>
-				<h1 className='gradient__text'>Projects</h1>
-			</div>
+			<Container>
+				<div className='projects__container'>
+					{projectsData.map((item, index) => (
+						<div className='project' key={item.title + index}>
+							<Link to={`/projects/${item.title}`}>
+								<h4>{item.title}</h4>
+								<img src={item.image} alt={item.title} />
+								<div className='text-on-image'>
+									<p> {item.title} </p>
+								</div>
+							</Link>
+						</div>
+					))}
+				</div>
+			</Container>
 		</div>
 	)
 }

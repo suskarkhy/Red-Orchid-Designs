@@ -1,5 +1,8 @@
 import React from 'react'
-import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
+
+import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineWhatsApp, AiOutlinePhone, AiOutlineMail } from 'react-icons/ai'
+import { GoLocation } from 'react-icons/go'
+
 import logo from '../../assets/RO-logo-transBR.png'
 import './footer.css'
 
@@ -40,13 +43,17 @@ const Footer = () => (
 			<div className='gpt3__footer-links'>
 				<div className='gpt3__footer-links_div'>
 					<a href='https://goo.gl/maps/rpCuFUf6ThNJoNqE6' target='_blank' rel='noopener noreferrer' title='location'>
-						<p>Star Towers - Building B - 3rd Floor - apartment 12</p>
+						<p>
+							Star Towers - Building B - 3rd Floor - apartment 7 <GoLocation size={20} />{' '}
+						</p>
 					</a>
 					<a href='tel:07502000201' target='_blank' rel='noopener noreferrer' title='phone number'>
-						<p>+964 750 200 0201</p>
+						<p>
+							+964 750 200 0201 <AiOutlinePhone size={20}/>
+						</p>
 					</a>
 					<a href='mailto:redorchid1221@gmail.com' rel='noopener noreferrer' title='email'>
-						<p>redorchid1221@gmail.com</p>
+						<p>redorchid1221@gmail.com <AiOutlineMail size={20} /></p>
 					</a>
 				</div>
 			</div>
