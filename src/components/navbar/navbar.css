@@ -138,14 +138,17 @@
 }
 
 @media screen and (max-width: 700px) {
-	.gpt3__navbar {
-		padding: 2rem 4rem;
+	.gpt3__navbar-links_logo img {
+		width: 75px;
+		height: 75px;
 	}
 }
 
 @media screen and (max-width: 550px) {
-	.gpt3__navbar {
-		padding: 2rem;
+	.gpt3__navbar-links_logo img {
+		width: 60px;
+		height: 60px;
+		border-radius: 15px;
 	}
 
 	.gpt3__navbar-sign {

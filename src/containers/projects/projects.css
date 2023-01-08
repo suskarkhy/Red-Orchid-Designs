@@ -66,6 +66,11 @@
 	transition: 0.5s ease;
 }
 
+.project:hover img {
+	transform: scale(0.95);
+	transition: 0.5s ease;
+}
+
 .text-on-image {
 	color: white;
 	background: var(--gradient-nav);
@@ -86,10 +91,6 @@
 
 .project:hover .text-on-image {
 	opacity: 1;
-}
-
-.project img:hover {
-	filter: blur(1px);
 }
 
 @media screen and (max-width: 990px) {

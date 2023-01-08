@@ -1,7 +1,7 @@
 import React from 'react'
 import './blog.css'
 
-import { project01, project02, project03, project04, project05 } from './imports'
+import { project01, project02, project03, project04} from './imports'
 
 import Carousel from 'react-bootstrap/Carousel'
 
@@ -19,9 +19,6 @@ const Blog = () => (
 			</Carousel.Item>
 			<Carousel.Item interval={2000}>
 				<img className='d-block w-100' src={project04} alt='Fourth slide' />
-			</Carousel.Item>
-			<Carousel.Item interval={2000}>
-				<img className='d-block w-100' src={project05} alt='Fourth slide' />
 			</Carousel.Item>
 		</Carousel>
 	</div>

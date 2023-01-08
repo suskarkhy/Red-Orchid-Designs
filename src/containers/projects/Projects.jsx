@@ -2,7 +2,7 @@ import React from 'react'
 import './projects.css'
 import { Link } from 'react-router-dom'
 
-import image from '../../assets/test 10 ps 1.jpg'
+import image from '../../assets/Website/Our Projects Page/One landscape photo/007 Manager scene 2  RV1.jpg'
 import logo from '../../assets/RO-logo-transBR.png'
 import { img1, img2, img3, img4 } from './imports'
 
@@ -42,9 +42,6 @@ const Projects = () => {
 							<Link to={`/projects/${item.title}`}>
 								<h4>{item.title}</h4>
 								<img src={item.image} alt={item.title} />
-								<div className='text-on-image'>
-									<p> {item.title} </p>
-								</div>
 							</Link>
 						</div>
 					))}
