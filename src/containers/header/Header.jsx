@@ -1,11 +1,10 @@
 import React from 'react'
-import './blog.css'
 
-import { project01, project02, project03, project04} from './imports'
+import { project01, project02, project03, project04 } from './imports'
 
 import Carousel from 'react-bootstrap/Carousel'
 
-const Blog = () => (
+const Header = () => (
 	<div>
 		<Carousel fade slide={true}>
 			<Carousel.Item interval={2000}>
@@ -24,4 +23,4 @@ const Blog = () => (
 	</div>
 )
 
-export default Blog
+export default Header

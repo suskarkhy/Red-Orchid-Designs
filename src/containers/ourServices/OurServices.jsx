@@ -1,15 +1,15 @@
 import React from 'react'
 
-import Feature from '../../components/ourService/Feature'
+import OurService from '../../components/ourService/OurService'
 import construction from '../../assets/construction.png'
 
 import { MdOutlineConstruction, MdOutlineFoundation } from 'react-icons/md'
 import { FaTruckLoading } from 'react-icons/fa'
 import { GrUserWorker } from 'react-icons/gr'
 
-import './features.css'
+import './ourServices.css'
 
-const featuresData = [
+const servicesData = [
 	{
 		title: 'Building Contruction',
 		text: 'Lorem Ipsum is simply dummy text.',
@@ -32,18 +32,18 @@ const featuresData = [
 	},
 ]
 
-const Features = () => (
-	<div className='gpt3__features section__padding'>
-		<div className='gpt3__features-heading'>
+const OurServices = () => (
+	<div className='RO__ourServices section__padding'>
+		<div className='RO__ourServices-heading'>
 			<h1 className='gradient__text'>Our Services</h1>
 			<img alt='services' src={construction} />
 		</div>
-		<div className='gpt3__features-container'>
-			{featuresData.map((item, index) => (
-				<Feature title={item.title} text={item.text} icon={item.icon} key={item.title + index} />
+		<div className='RO__ourServices-container'>
+			{servicesData.map((item, index) => (
+				<OurService title={item.title} text={item.text} icon={item.icon} key={item.title + index} />
 			))}
 		</div>
 	</div>
 )
 
-export default Features
+export default OurServices

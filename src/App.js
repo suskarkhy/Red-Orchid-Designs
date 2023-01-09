@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import { Footer, Blog, Possibility, Features, Projects } from './containers'
+import { Footer, Header, AboutRO, OurServices, Projects } from './containers'
 import { Navbar, About, Project } from './components'
 
 import './App.css'
@@ -15,9 +15,9 @@ const App = () => (
 					path='/'
 					element={
 						<Fragment>
-							<Blog />
-							<Possibility />
-							<Features />
+							<Header />
+							<AboutRO />
+							<OurServices />
 						</Fragment>
 					}
 				/>

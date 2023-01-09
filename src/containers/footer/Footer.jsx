@@ -1,6 +1,12 @@
 import React from 'react'
 
-import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineWhatsApp, AiOutlinePhone, AiOutlineMail } from 'react-icons/ai'
+import {
+	AiOutlineFacebook,
+	AiOutlineInstagram,
+	AiOutlineWhatsApp,
+	AiOutlinePhone,
+	AiOutlineMail,
+} from 'react-icons/ai'
 import { GoLocation } from 'react-icons/go'
 
 import logo from '../../assets/RO-logo-transBR.png'
@@ -8,26 +14,41 @@ import './footer.css'
 
 const Footer = () => (
 	<div className='gradient__bg'>
-		<div className='gpt3__footer section__padding'>
-			<div className='gpt3__footer-heading'>
-				<div className='gpt3__footer-links_logo'>
+		<div className='RO__footer section__padding'>
+			<div className='RO__footer-heading'>
+				<div className='RO__footer-links_logo'>
 					<img alt='Red Orchid Designs' src={logo} />
 				</div>
 				<div className='get-in-touch'>
 					<h1>
 						Get in
-						<a href='https://wa.me/message/OE3JFQ4EXCRVG1' target='_blank' rel='noopener noreferrer' title='click me'>
+						<a
+							href='https://wa.me/message/OE3JFQ4EXCRVG1'
+							target='_blank'
+							rel='noopener noreferrer'
+							title='click me'
+						>
 							{' '}
 							Touch{' '}
 						</a>
 					</h1>
 					<div className='icons-div'>
 						<div className='icons'>
-							<a href='https://www.facebook.com/red.orchid.20' target='_blank' rel='noopener noreferrer' title='Facebook'>
+							<a
+								href='https://www.facebook.com/red.orchid.20'
+								target='_blank'
+								rel='noopener noreferrer'
+								title='Facebook'
+							>
 								{' '}
 								<AiOutlineFacebook size={27} />{' '}
 							</a>
-							<a href='https://wa.me/message/OE3JFQ4EXCRVG1' target='_blank' rel='noopener noreferrer' title='Instagram'>
+							<a
+								href='https://wa.me/message/OE3JFQ4EXCRVG1'
+								target='_blank'
+								rel='noopener noreferrer'
+								title='Instagram'
+							>
 								{' '}
 								<AiOutlineInstagram size={27} />{' '}
 							</a>
@@ -40,25 +61,32 @@ const Footer = () => (
 				</div>
 			</div>
 
-			<div className='gpt3__footer-links'>
-				<div className='gpt3__footer-links_div'>
-					<a href='https://goo.gl/maps/rpCuFUf6ThNJoNqE6' target='_blank' rel='noopener noreferrer' title='location'>
+			<div className='RO__footer-links'>
+				<div className='RO__footer-links_div'>
+					<a
+						href='https://goo.gl/maps/rpCuFUf6ThNJoNqE6'
+						target='_blank'
+						rel='noopener noreferrer'
+						title='location'
+					>
 						<p>
 							Star Towers - Building B - 3rd Floor - apartment 7 <GoLocation size={20} />{' '}
 						</p>
 					</a>
 					<a href='tel:07502000201' target='_blank' rel='noopener noreferrer' title='phone number'>
 						<p>
-							+964 750 200 0201 <AiOutlinePhone size={20}/>
+							+964 750 200 0201 <AiOutlinePhone size={20} />
 						</p>
 					</a>
 					<a href='mailto:redorchid1221@gmail.com' rel='noopener noreferrer' title='email'>
-						<p>redorchid1221@gmail.com <AiOutlineMail size={20} /></p>
+						<p>
+							redorchid1221@gmail.com <AiOutlineMail size={20} />
+						</p>
 					</a>
 				</div>
 			</div>
 
-			<div className='gpt3__footer-copyright'>
+			<div className='RO__footer-copyright'>
 				<p>@2022 Red Orchid. All rights reserved.</p>
 			</div>
 		</div>
